@@ -1,0 +1,6 @@
+---
+- name: Update Nextcloud Install
+  hosts: all
+  become: yes
+  tasks:
+    ansible.builtin.script: /home/rootadmin/NextCloudUpdate.sh
