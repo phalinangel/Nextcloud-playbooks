@@ -5,4 +5,4 @@
   become: yes
   tasks:
     - name: Nextcloud Maintenance Mode On
-      ansible.builtin.script: /home/rootadmin/NextCloudMaintenanceModeOn.sh
+      ansible.builtin.shell: /home/rootadmin/NextCloudMaintenanceModeOn.sh
