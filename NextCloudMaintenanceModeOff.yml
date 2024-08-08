@@ -1,0 +1,6 @@
+---
+- name: Turn off Nextcloud Maintenance Mode
+  hosts: all
+  become: yes
+  tasks:
+    ansible.builtin.script: /home/rootadmin/NextCloudMaintenanceModeOff.sh
