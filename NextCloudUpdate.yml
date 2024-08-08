@@ -4,4 +4,5 @@
   hosts: all
   become: yes
   tasks:
-    ansible.builtin.script: /home/rootadmin/NextCloudUpdate.sh
+    - name: Update Nextcloud Install
+      ansible.builtin.script: /home/rootadmin/NextCloudUpdate.sh
