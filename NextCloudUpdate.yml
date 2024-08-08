@@ -5,4 +5,4 @@
   become: yes
   tasks:
     - name: Update Nextcloud Install
-      ansible.builtin.shell: n | /home/rootadmin/NextCloudUpdate.sh
+      ansible.builtin.shell: y | ./home/rootadmin/NextCloudUpdate.sh
