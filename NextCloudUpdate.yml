@@ -3,6 +3,7 @@
 - name: Update Nextcloud Install
   hosts: all
   become: yes
+  gather_facts: no
   tasks:
     - name: Update Nextcloud Install
       ansible.builtin.shell: sudo -u www-data php --define apc.enable_cli=1 /var/www/nextcloud/updater/updater.phar -n
