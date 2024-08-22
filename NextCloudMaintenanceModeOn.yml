@@ -3,6 +3,7 @@
 - name: Turn on Nextcloud Maintenance Mode
   hosts: all
   become: yes
+  gather_facts: no
   tasks:
     - name: Nextcloud Maintenance Mode On
       ansible.builtin.shell: /home/rootadmin/NextCloudMaintenanceModeOn.sh
