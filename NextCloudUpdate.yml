@@ -5,5 +5,5 @@
   become: yes
   gather_facts: no
   tasks:
-    - name: Update Nextclout to the latest version
+    - name: Update Nextcloud to the latest version
       ansible.builtin.shell: sudo -u www-data php --define apc.enable_cli=1 /var/www/nextcloud/updater/updater.phar -n
